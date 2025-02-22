@@ -67,6 +67,10 @@ where
         assert!(end <= self.n);
         OwnedPermutationIterator::new(self, begin, end)
     }
+
+    pub fn max(&self) -> u64 {
+        self.n
+    }
 }
 
 impl<B: std::hash::BuildHasher> IntoIterator for Permutation<B> {

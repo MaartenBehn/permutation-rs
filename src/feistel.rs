@@ -7,6 +7,7 @@ use std::hash::{BuildHasher, Hasher};
 /// The cipher requires a series of hashes which are built using
 /// a supplied [`std::hash::BuildHasher`] (passed with the parameter
 /// name `bob`, coz it'z a builder, right?)
+#[derive(Debug, Clone)]
 pub struct Feistel<B>
 where
     B: BuildHasher,

@@ -4,6 +4,7 @@ use std::hash::BuildHasher;
 use crate::{DefaultBuildHasher, Feistel};
 
 /// An object of constructing random access permutations.
+#[derive(Debug, Clone)]
 pub struct Permutation<B = DefaultBuildHasher>
 where
     B: BuildHasher,

@@ -2,6 +2,7 @@
 use std::hash::BuildHasher;
 
 /// A BuildHasher for the standard DefaultHasher.
+#[derive(Debug, Clone)]
 pub struct DefaultBuildHasher {}
 
 impl DefaultBuildHasher {
